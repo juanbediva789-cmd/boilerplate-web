@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metas principales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boilerplate de estructura web moderna con Flexbox">
+    <title>Mi Sitio Web - Boilerplate</title>
+
+    <!-- 1. Reset/Normalización mediante CDN (Normalize.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- 2. Google Fonts (Fuente de ejemplo: Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- 3. Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- 4. Tu CSS propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor principal de ancho variable (1000px - 2000px) -->
+    <div class="main-wrapper" id="inicio">
+        
+        <!-- Cabecera -->
+        <header class="site-header">
+            <div class="logo">
+                <h1>NexusWeb</h1>
+            </div>
+            <!-- Menú de navegación con enlaces internos -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#articulos">Artículos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal -->
+        <div class="content-area">
+            
+            <main class="main-content">
+                <!-- Sección de Inicio -->
+                <section class="hero-section">
+                    <h2>Bienvenido a nuestro sitio</h2>
+                    <p>Estructura base de demostración siguiendo buenas prácticas, diseño flexible y componentes modulares.</p>
+                </section>
+
+                <!-- Sección de Servicios -->
+                <section id="servicios" class="hero-section" style="background-color: #eef2f7;">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Ofrecemos soluciones de desarrollo web adaptadas a tus necesidades, diseño UI/UX avanzado y optimización de rendimiento multiplataforma.</p>
+                </section>
+
+                <!-- Sección de Artículos -->
+                <section id="articulos" class="articles-grid">
+                    <h2>Artículos Recientes</h2>
+                    
+                    <!-- Artículo 1 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Ordenador portátil mostrando código de programación web en pantalla">
+                        <h3>Desarrollo Web Moderno</h3>
+                        <p>Descubre cómo las tecnologías actuales y el uso de Flexbox facilitan la creación de diseños adaptables, limpios y eficientes.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Gráficas de análisis y diseño estético en pantallas digitales">
+                        <h3>Diseño Estético y UI/UX</h3>
+                        <p>La importancia de cuidar cada detalle visual, las paletas de colores coherentes y la tipografía inspirada en referentes como Apple.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </article>
+
+                    <!-- Artículo 3 -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Equipo de trabajo colaborando en un proyecto digital en oficina">
+                        <h3>Buenas Prácticas en GitHub</h3>
+                        <p>Aprende a estructurar tus repositorios correctamente y a desplegar tus proyectos de forma gratuita mediante GitHub Pages.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </article>
+                </section>
+            </main>
+
+            <!-- Barra lateral (ASide) con ID de Contacto -->
+            <aside class="sidebar" id="contacto">
+                <h3>Contacto e Información</h3>
+                <p>¿Tienes dudas o quieres colaborar en un proyecto? Escríbenos a nuestro correo de soporte o síguenos en nuestras redes sociales.</p>
+                <p><strong>Email:</strong> contacto@tudominio.com</p>
+                <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+            </aside>
+            
+        </div>
+
+        <!-- Pie de página (Footer) -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+            <!-- Iconos de redes sociales -->
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Elemento fijo flotante en la esquina inferior derecha -->
+    <a href="#inicio" class="floating-btn" title="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</body>
+</html>
